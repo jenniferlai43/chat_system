@@ -134,24 +134,36 @@ ul {
   text-align: right;
 }
 
-#img
+#camera
 {
-    z-index: 30;
     width: 55px;
     position: absolute;
-    bottom: 0.7vh;
-    left: 90vw;
     opacity: 1;
+    bottom: 5px;
+    right: 115px;
 }
 
-#img:hover
+#camera:hover
 {
 	opacity: 0.8;
+}
+
+#arrow
+{
+	width: 55px;
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
 }
 
 #img_wrapper
 {
 	width: 87%;
+}
+
+#img_wrapper > input
+{
+    display: none;
 }
 
 /* Input */
@@ -165,5 +177,5 @@ ul {
     padding-left: 10px;
     position: absolute;
     right: 0;
-    width: 87%;
+    width: 800px;
 }
