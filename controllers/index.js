@@ -13,4 +13,10 @@ module.exports = (app) => {
 
 	});
 	*/
+
+	//query through database, look for max emotion
+	app.post('/message', (req, res) => {
+		//getting data from request
+	});
+
 }

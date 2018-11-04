@@ -146,6 +146,7 @@ ul {
 #camera:hover
 {
 	opacity: 0.8;
+	cursor: pointer;
 }
 
 #arrow
@@ -165,6 +166,18 @@ ul {
 {
     display: none;
 }
+
+#submit_button
+{
+	display: none;
+}
+
+#arrow:hover
+{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
 
 /* Input */
 

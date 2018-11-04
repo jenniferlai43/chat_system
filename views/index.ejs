@@ -13,14 +13,17 @@
       </div>
       <div class = "input_area">
         <input class="inputMessage" placeholder="Type here..."/>
-          <form action="/profile" method="post" enctype="multipart/form-data">
+          <form>
             <div id = 'img_wrapper'>
-                <input type="file" id='file-upload' name="avatar" img = '/camera.png' />
+                <input type="file" id='file-upload' name="file-upload" img = '/camera.png' />
                 <label for='file-upload'>
                   <img id = 'camera' src = '/camera.png'/>
                 </label>
             </div>
-              <input type='submit' value='submit'><img id = 'arrow' src='/arrow.png' /></submit>
+              <button id = 'submit_button' type='submit' value='submit'></button>
+              <label for = 'submit_button'>
+                  <img id = 'arrow' src='/arrow.png' />
+              </label>
           </form>
       </div>
     </li>
@@ -35,5 +38,11 @@
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/main.js"></script>
+  <script src = "/camera.js"></script>
+  <script>
+    document.getElementById("submit_button").addEventListener("click", function(event){
+        event.preventDefault()
+    });
+  </script>
 </body>
 </html>
